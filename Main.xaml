@@ -1,0 +1,454 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1732,5896.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1056,5832" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_Beschreibung" />
+      <Variable x:TypeArguments="x:String" Name="str_Kontakt" />
+      <Variable x:TypeArguments="x:String" Name="str_Anschrift" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_Links" />
+      <Variable x:TypeArguments="x:String" Name="str_Firma" />
+      <Variable x:TypeArguments="x:String" Name="str_URL" />
+      <Variable x:TypeArguments="x:String" Name="str_Straße" />
+      <Variable x:TypeArguments="x:String" Name="str_Stadt" />
+      <Variable x:TypeArguments="x:String" Name="str_PLZ" />
+      <Variable x:TypeArguments="x:String" Name="str_Land" />
+      <Variable x:TypeArguments="x:String" Name="str_Website" />
+      <Variable x:TypeArguments="x:String" Name="str_Mail" />
+      <Variable x:TypeArguments="x:String" Name="str_Tel" />
+      <Variable x:TypeArguments="x:String" Name="str_Bundesland" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="993.6,5720" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="e698fe46-eff1-403f-ba38-b575d942d3d5" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="960,5503.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="897.6,161.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Ausstellerliste" sap:VirtualizedContainerService.HintSize="483.2,529.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="5504a752-ac39-423c-af7a-5e3f5a461555" Version="V2">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Links]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Firma'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column css-selector='.exhibitor-name.wrap-word' name='Column0' attr='fulltext' name2='Column1' attr2='href' /&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" Version="V4">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.psi-messe.com/de-de/fuer-besucher/Ausstellerliste.html#/" DesignTimeRectangle="639, 458, 973, 140231" DesignTimeScaleFactor="1.125" ElementType="List" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul' parentid='exhibitor-directory' tag='UL' /&gt;" Guid="cca4d3ab-f1ee-4837-8772-c3395f2bb67b" InformativeScreenshot="fa7925776e30f921fe8adb2011d5ea25.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Ausstellerliste' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEySURBVDhPpVFNS8NAFHwXD/4Qj9715n/w7xTEkwqi4ieKIlbUYxAPipeC/0A8iMWYmLRIGkRFa1NMOu57u0Fb9+DqwGTfm8nObl6I9hv4F62iC62iC62iC+Ux739x8Q60HWlzPez3tozOPvcSoIpBjJ8loDkfu37bKBqVyxfQSoiR4wfpJeR7wOTFo6xP3QJDB02pGbQRwos7oFV9oxI/AmauXmW9fs5Bm/dSl0izArQXg2ZvjWIJSLMccbvA8GETtKBmUY3hRZlx+WY9UOXGdAMBwdsHaLquvjGQ08dOW6KPnrRwFOpZePE7aKouNUMHLAfS1JJMT50nuxNh4jxFJ++Jx6glXT2DJf0+g/fq38hFubmkChGdT+HPWVN+1XisM7nu2/QXWkUXWkUXWsVfs4FPwknPe+qmPfQAAAAASUVORK5CYII=" InformativeScreenshot="9474663d963b183fb011e091592bf106.jpg" Selector="&lt;html app='msedge.exe' title='Ausstellerliste' /&gt;" Title="Ausstellerliste" Url="https://www.psi-messe.com/de-de/fuer-besucher/Ausstellerliste.html#/" Version="V1" />
+                    </uix:NApplicationCard.TargetApp>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="897.6,5186.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="864,5100" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="801.6,4988" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\mgrueske\Desktop\Messeliste.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="768,4678.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="705.6,161.6" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Normal&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[dt_Links]" />
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="705.6,4364.8" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Normal&quot;)]" SaveAfterEachRow="False">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="672,4172" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="609.6,4060" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="sd:DataTable" Name="dt_Adresse" />
+                                        <Variable x:TypeArguments="s:String[]" Name="array_Adressen" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ueab:ReadCellValueX Cell="[CurrentRow.ByField(&quot;Firma&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="ReadCellValueX_1">
+                                        <ueab:ReadCellValueX.SaveTo>
+                                          <OutArgument x:TypeArguments="x:String">[str_Firma]</OutArgument>
+                                        </ueab:ReadCellValueX.SaveTo>
+                                      </ueab:ReadCellValueX>
+                                      <ueab:ReadCellValueX Cell="[CurrentRow.ByField(&quot;Url&quot;)]" DisplayName="Read Cell Value" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                                        <ueab:ReadCellValueX.SaveTo>
+                                          <OutArgument x:TypeArguments="x:String">[str_URL]</OutArgument>
+                                        </ueab:ReadCellValueX.SaveTo>
+                                      </ueab:ReadCellValueX>
+                                      <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="547.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[str_URL]" Version="V4" />
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="547.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                      <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Beschreibung'" sap:VirtualizedContainerService.HintSize="547.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Beschreibung]" Timeout="3" Version="V4">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.pagani%20pens%20sa.org-b31ff8f5-09dd-417f-ac1c-427f7b0125ae.html" DesignTimeRectangle="307, 435, 861, 202" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_description' tag='P' type='' class='' /&gt;" Guid="1fc8c8bf-2d4f-4c43-841e-f1777e184040" InformativeScreenshot="fefe2b54a648b8940dd6143c4ca00183.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Pagani Pens SA - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="307, 403, 143, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_description' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_description' tag='H2' type='' class='' aaname='Beschreibung' check:innerText='Beschreibung' /&gt;" Guid="a2467aef-d1bf-4157-a0d6-3ea79af1f7bb" SearchSteps="Selector, FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                      </uix:NGetText>
+                                      <Sequence DisplayName="Sequence - Get Text 'Kontakt'" sap:VirtualizedContainerService.HintSize="547.2,664.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Website'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Website]" Timeout="3" Version="V4">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.senator%20gmbh.org-36f5dcf3-4af7-4c46-a31a-f300b5f1b0ca.html" CVScreenId="3960ea27-2b63-4702-8696-dcb24076863d" CvTextArea="1219, 441, 212, 21" CvType="AnyWordGroup" DesignTimeRectangle="1195, 438, 236, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor-details' tag='A' type='' class='' /&gt;" Guid="799fbb2f-a4b9-4728-bc77-6280d1bfc880" InformativeScreenshot="aea4bf4ef1ba6aa8b8d976e7d3656b64.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SENATOR GmbH - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CVScreenId="3960ea27-2b63-4702-8696-dcb24076863d" CvElementArea="1190, 439, 25, 24" CvType="Icon" DesignTimeRectangle="1195, 444, 17, 17" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-role='img' type='' parentid='exhibitor-details' tag='svg' class='svg-inline--fa fa-globe fa-w-16 ' aaname='' /&gt;" Guid="143fb99b-a4c3-4aef-a830-5c1ec8e99369" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHqSURBVDhPvZTPLwNBFMf9Sa4SjuLoIEQkEgcnibg4uSCcHVRDJH7/iAhBqMSPOFBtqAStVFvSVhu7bZX+Xj/a5Nk3uzOdndUQCd/km9n3+uYz8zo7WwV/oP+HXj7myXh0l4bO1XsyuiI58MYUkq+kitDREwmGDqLgSyhQZ/VA9cgVGX1xBRqnb8Fil0DKvOvVRpmgyUKRANC4I+upzGL09Fkctm6eyXP9pBeupYI+sywTFNvECa2LARI3z/sM0O6NIKSU8sJtS1odLwN01pVgxf17EXCGsyymrh3zQCz3AS0Lfpaz2GWdoIlB8QAMjubggjhvsKmOMxWD4mrYOjUWiTnqcYcMU+p/y+dOglmdxEEH96OGNhEq5qgRSg+LGmMqBsXV+CKEijlqhOLvYo6KQYcPzTsVc9QI2PAYd7rjfdFJHBQL0RPOGNsJzfF50TTvUN8UKgYNvbyRgp/4WD0UES5nP3QSB0XNnMdZO327D+BWbwvfIrpBvUWZtxL0bIZYznZbbh1lgKI6Vu5IYfO8n8Tty1pM3bsdhqd8EWosbhIP7EdIHS8TFNU0p90WvPvYGg/FW7fmTpLnrvUgpF9L+qyyvoSiDgKpr79Satymfhds3GmLqgilwt3a9YPBEXf5nb6F/kZ/AAX4BItVCxhYzcWIAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Mail'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Mail]" Timeout="3" Version="V4">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.senator%20gmbh.org-36f5dcf3-4af7-4c46-a31a-f300b5f1b0ca.html" DesignTimeRectangle="1195, 735, 180, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor-details' tag='A' type='' class='' /&gt;" Guid="ff57b341-9a64-4395-bc2b-ec7659b9ae93" InformativeScreenshot="a7deccb15e85bb00594b573c94cca10e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SENATOR GmbH - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target DesignTimeRectangle="1195, 649, 417, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='exhibitor-details' tag='H2' aaname='UNTERNEHMENSKONTAKT' check:innerText='UNTERNEHMENSKONTAKT' /&gt;" Guid="aa965cdc-ab86-4a77-8d12-afa56a8e4f42" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Tel'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Tel]" Timeout="3" Version="V4">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.3m%20promotional%20markets%20powered%20by%20cca%20occasions.org-599d5c8d-8874-4137-b35c-8945e35decab.html" DesignTimeRectangle="1195, 865, 135, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor-details' tag='A' type='' class='' /&gt;" Guid="5b7cd308-fb20-40dd-8309-0e47346149d1" InformativeScreenshot="e3c15e30d61c2c42c6cd473028f3d912.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='3M Promotional Markets powered by CCA Occasions - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target DesignTimeRectangle="1195, 871, 17, 17" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;svg&amp;gt;path' idx='3' parentid='exhibitor-details' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='exhibitor-details' tag='path' aaname='' /&gt;" Guid="47b3abf3-9d1f-4613-83ea-bea62c9a3a14" SearchSteps="Selector, FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                      </Sequence>
+                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Adresse]" DisplayName="Extract Table Data - 'Anschrift'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Adresse' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='span' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="547.2,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" Version="V4">
+                                        <uix:NExtractData.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://www.psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.airfresh.org-16266aa3-2bd5-4544-a3cb-f22a958fa89f.html#/" DesignTimeRectangle="1469, 571, 333, 161" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='P' /&gt;" Guid="fc4b7a7a-7a1b-4653-aba2-79bc4e39616f" InformativeScreenshot="94cdc0bc0de330baf75211382eeba973.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Airfresh - Ausstellerinformationen' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                        </uix:NExtractData.Target>
+                                      </uix:NExtractData>
+                                      <Assign sap:VirtualizedContainerService.HintSize="547.2,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="s:String[]">[array_Adressen]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="s:String[]">[(dt_Adresse.AsEnumerable().Select(Function(a) a(0).ToString)).ToArray]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;J25&quot;)]" DisplayName="Write Cell - 'Land'" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[array_Adressen(array_Adressen.Length -1)]" />
+                                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="547.2,273.6" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                        <ui:CommentOut.Body>
+                                          <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="512,195.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="Sequence - Get Text 'Anschrift'" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NGetText DisplayName="Get Text 'Straße'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Straße]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.aloga%20gmbh.org-9a9e1d98-7ea6-4177-85a2-0a8c7abc185d.html" DesignTimeRectangle="1195, 844, 417, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' type='' class='' /&gt;" Guid="22505b01-06b1-45a4-ac75-553425b559fc" InformativeScreenshot="220703fab5acf427c19fd1a6ebee169d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='aloga gmbh - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target DesignTimeRectangle="1195, 806, 417, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' type='' class='' aaname='ANSCHRIFT' check:innerText='ANSCHRIFT' /&gt;" Guid="dfea3568-2986-4d03-aeac-a906cac88ee6" SearchSteps="FuzzySelector" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Stadt'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Stadt]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.uma%20schreibger%C3%A4te.org-77094d12-d707-48db-a446-364c3ae4663e.html" DesignTimeRectangle="1195, 799, 417, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' type='' class='' /&gt;" Guid="b6382f71-3d9a-4b31-aa82-5182fa9ce875" InformativeScreenshot="04bc4cbd6ccc982df0425a7926f4f4ca.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='uma Schreibgeräte - Ausstellerinformationen' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target DesignTimeRectangle="1195, 723, 417, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' type='' class='' aaname='ANSCHRIFT' check:innerText='ANSCHRIFT' /&gt;" Guid="bce378ef-7bb3-45e2-bc17-5bd37ecffbfa" SearchSteps="FuzzySelector" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Bundesland'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" ScrapingOptions="None" TextString="[str_Bundesland]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.uma%20schreibger%C3%A4te.org-77094d12-d707-48db-a446-364c3ae4663e.html" CVScreenId="6e70912d-2172-44c1-9990-2a5dbb651450" CvTextArea="1469, 772, 144, 16" CvType="AnyWordGroup" DesignTimeRectangle="1469, 768, 333, 30" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;span' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' type='' class='' /&gt;" Guid="9eef8ed8-d068-4498-bfb6-6713e8c4fd0d" ImageBase64="" InformativeScreenshot="3ab431ff6163ad83faac755be0a336e8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='uma Schreibgeräte - Ausstellerinformationen' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CVScreenId="6e70912d-2172-44c1-9990-2a5dbb651450" CvTextArea="1466, 677, 100, 15" CvTextArgument="ANSCHRIFT" CvType="Text" DesignTimeRectangle="1469, 677, 333, 25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' /&gt;&lt;nav up='1' /&gt;&lt;webctrl parentid='exhibitor_details_address' tag='H2' aaname='ANSCHRIFT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' type='' class='' aaname='ANSCHRIFT' check:innerText='ANSCHRIFT' /&gt;" Guid="d1209b78-55a3-4a4d-b0b3-d556a702af03" SearchSteps="Selector, FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'PLZ'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_PLZ]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.ada%20kupa%20seramik%20ic%20dis%20ticaret%20limited%20sirketi.org-dc435307-2b8a-406c-92ed-7d944c07fee9.html" DesignTimeRectangle="1195, 817, 417, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p&amp;gt;span' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' type='' class='' /&gt;" Guid="23246638-6400-4ad6-a6c6-a228b0aab821" ImageBase64="" InformativeScreenshot="ad293d6cf2e8973083024dd6903096f9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ADA KUPA SERAMIK IC DIS TICARET LIMITED SIRKETI - Ausstellerinformationen' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target DesignTimeRectangle="1195, 665, 417, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' /&gt;" FuzzyAccuracy="0.91" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='H2' type='' class='' aaname='ANSCHRIFT' check:innerText='ANSCHRIFT' /&gt;" Guid="759b20c6-662b-4442-ada3-d02d2b209f87" SearchSteps="Selector, FuzzySelector" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Land'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="e698fe46-eff1-403f-ba38-b575d942d3d5" TextString="[str_Land]" Version="V4">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="psi-messe.com/de-de/fuer-besucher/Ausstellerliste/Ausstellerdetails.senator%20gmbh.org-36f5dcf3-4af7-4c46-a31a-f300b5f1b0ca.html" CVScreenId="6eaae3c0-fdd4-4bb7-85e6-a09ead5f37cf" CvTextArea="1194, 917, 108, 17" CvType="AnyWordGroup" DesignTimeRectangle="1195, 913, 417, 38" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' isleaf='1' idx='5' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' tag='SPAN' isleaf='1' type='' class='' /&gt;" Guid="a81842a8-ccab-4bcb-81fe-0f81e141e8aa" ImageBase64="" InformativeScreenshot="6e8b0f9ae27c9c3af8822c678ecb3c62.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='* - Ausstellerinformationen' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CVScreenId="6eaae3c0-fdd4-4bb7-85e6-a09ead5f37cf" CvTextArea="1191, 723, 125, 18" CvTextArgument="ANSCHRIFT" CvType="Text" DesignTimeRectangle="1195, 723, 417, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='exhibitor_details_address' aaname='ANSCHRIFT' innertext='ANSCHRIFT' visibleinnertext='ANSCHRIFT' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl parentid='exhibitor_details_address' aaname='ANSCHRIFT' innertext='ANSCHRIFT' visibleinnertext='ANSCHRIFT' tag='H2' type='' class='' check:text='ANSCHRIFT' /&gt;" Guid="1d9bcd06-625a-4209-a020-94d2f4bfda6a" SearchSteps="Selector, FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                            </Sequence>
+                                          </Sequence>
+                                        </ui:CommentOut.Body>
+                                      </ui:CommentOut>
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;A25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[str_Firma]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;B25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[str_Website]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;E25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[str_Straße]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;G52&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[str_Stadt]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;H25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[str_Bundesland]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;I25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[str_PLZ]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;V25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[str_Mail]" />
+                                      <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Test&quot;).Cell(&quot;W25&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="547.2,160" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[str_Beschreibung]" />
+                                    </Sequence>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="2966, -56, 1298, 918" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEySURBVDhPpVFNS8NAFHwXD/4Qj9715n/w7xTEkwqi4ieKIlbUYxAPipeC/0A8iMWYmLRIGkRFa1NMOu57u0Fb9+DqwGTfm8nObl6I9hv4F62iC62iC62iC+Ux739x8Q60HWlzPez3tozOPvcSoIpBjJ8loDkfu37bKBqVyxfQSoiR4wfpJeR7wOTFo6xP3QJDB02pGbQRwos7oFV9oxI/AmauXmW9fs5Bm/dSl0izArQXg2ZvjWIJSLMccbvA8GETtKBmUY3hRZlx+WY9UOXGdAMBwdsHaLquvjGQ08dOW6KPnrRwFOpZePE7aKouNUMHLAfS1JJMT50nuxNh4jxFJ++Jx6glXT2DJf0+g/fq38hFubmkChGdT+HPWVN+1XisM7nu2/QXWkUXWkUXWsVfs4FPwknPe+qmPfQAAAAASUVORK5CYII=" InformativeScreenshot="d2ded730ccebb40e37fed167e58242d0.jpg" Selector="&lt;html app='msedge.exe' title='Ausstellerliste' /&gt;" Title="Ausstellerliste" Url="https://www.psi-messe.com/de-de/fuer-besucher/Ausstellerliste.html#/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
